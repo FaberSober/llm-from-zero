@@ -1,6 +1,6 @@
 # Feature 01 - Forward Computation
 
-![前向计算知识说明卡片](assets/forward-computation-v3.png)
+![前向计算知识说明卡片](./assets/Sprint01-Feature01-Forward-Computation.png)
 
 这张说明卡片展示了一个线性单元如何把输入 `x`、权重 `w` 和偏置 `b` 组合成预测值 `y_hat`，并标注了每个组成部分的作用。
 

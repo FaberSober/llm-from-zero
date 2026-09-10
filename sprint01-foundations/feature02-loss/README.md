@@ -1,5 +1,7 @@
 # Feature 02 - Loss
 
+![损失函数知识说明卡片](./assets/Sprint01-Feature02-Loss.png)
+
 ## 1. 这是什么
 
 Loss（损失）是用一个数字描述模型预测值与真实值之间差距的方法。
