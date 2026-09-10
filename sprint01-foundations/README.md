@@ -5,7 +5,7 @@
 ## 学习顺序
 
 1. [Feature 01 - Forward Computation](feature01-forward/)
-2. Feature 02 - Loss
+2. [Feature 02 - Loss](feature02-loss/)
 3. Feature 03 - Gradient
 4. Feature 04 - Chain Rule
 5. Feature 05 - Backpropagation
