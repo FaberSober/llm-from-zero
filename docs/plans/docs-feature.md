@@ -122,10 +122,20 @@ sprint01-foundations/README.md
   → docs-build/sprint01-foundations/index.md
 
 sprint01-foundations/feature01-forward/README.md
-  → docs-build/sprint01/feature01-forward/index.md
+  → docs-build/sprint01-foundations/feature01-forward.md
 ```
 
-Feature 的 `assets/` 复制到对应临时目录，保证现有相对图片链接继续有效。Python 源码不复制到网站目录，页面只保留必要代码片段和 GitHub 源文件链接。
+只有 README 的 Feature 会直接展平到 Sprint 目录：
+
+~~~text
+Feature 只有 README
+  → Sprint/feature-name.md
+
+Feature 包含多个 Markdown 文档
+  → Sprint/feature-name/index.md
+~~~
+
+展平页面的 `assets/` 会复制到 `Sprint/assets/feature-name/`，并只修改临时副本中的图片路径。源 README 和 GitHub 链接保持不变。Python 源码不复制到网站目录，页面只保留必要代码片段和 GitHub 源文件链接。
 
 ### 4.3 导航策略
 
@@ -137,6 +147,13 @@ feature01 → feature02 → feature03
 ```
 
 通过目录名称中的序号保证默认导航顺序，避免每增加一个 Feature 都手动维护长导航配置。Zensical 默认可根据目录结构和 Markdown 页面生成导航，也支持后续为重要页面增加显式导航。[Zensical Navigation](https://zensical.org/docs/setup/navigation/)
+
+导航层级规则：
+
+- Sprint README 始终作为 Sprint 概览页；
+- 只有一个 Markdown 文档的 Feature 直接显示为 Sprint 下的页面；
+- 包含多个 Markdown 文档的 Feature 保留可展开分组；
+- 图片和 Python 文件不单独出现在导航中。
 
 ## 5. Feature 教学内容规范
 
@@ -349,6 +366,7 @@ AI 只创建 Draft PR，不直接修改 `main`。该阶段需要额外的 API Ke
 - 阶段 1 的文档基础设施已完成并通过本地构建；
 - 阶段 2 的工作流文件已完成，等待 GitHub Pages 设置和远端 Actions 验证；
 - 阶段 3 的 README 规范和大模型维护提示词已完成；
+- 单文档 Feature 的导航已展平；
 - 阶段 4 暂不启动。
 
 ## 9. MVP 完成标准
@@ -400,6 +418,7 @@ AI 只创建 Draft PR，不直接修改 `main`。该阶段需要额外的 API Ke
 | 构建基础 | 构建产物隔离 | 忽略 `docs-build/` 和 `site/` | 执行开发 | ✅已完成 |
 | 网站配置 | Zensical 配置 | 配置站点信息、源目录、主题和站点 URL | 执行开发 | ✅已完成 |
 | 网站配置 | 自动目录导航 | 按 Sprint / Feature 编号生成稳定顺序 | 执行开发 | ✅已完成 |
+| 网站配置 | 单文档 Feature 扁平导航 | 只有 README 的 Feature 直接显示在 Sprint 下 | 执行开发 | ✅已完成 |
 | 网站能力 | KaTeX | 支持教学公式的行内和块级渲染 | 执行开发 | 🔍验证中 |
 | 网站能力 | Mermaid | 支持流程图和结构图代码块 | 执行开发 | 🔍验证中 |
 | 网站能力 | 内置搜索 | 支持按章节查找教学内容 | 执行开发 | ✅已完成 |
