@@ -1,5 +1,7 @@
 # Feature 03 - Gradient
 
+![梯度知识说明卡片](./assets/Sprint01-Feature03-Gradient.png)
+
 ## 1. 本章目标
 
 理解梯度如何描述 Loss 对预测值的变化方向和变化速度，并能手工计算一个最小例子的梯度。

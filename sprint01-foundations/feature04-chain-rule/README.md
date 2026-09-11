@@ -1,5 +1,7 @@
 # Feature 04 - Chain Rule
 
+![链式法则知识说明卡片](./assets/Sprint01-Feature04-chain-rule.png)
+
 ## 1. 本章目标
 
 理解当 Loss 通过多个计算步骤依赖一个参数时，如何用 Chain Rule 把各步骤的局部导数相乘，得到 Loss 对该参数的梯度。

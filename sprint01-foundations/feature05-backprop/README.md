@@ -1,5 +1,7 @@
 # Feature 05 - Backpropagation
 
+![反向传播知识说明卡片](./assets/Sprint01-Feature05-backprop.png)
+
 ## 1. 本章目标
 
 理解如何在一个包含多个节点和分支的计算图中，从 Loss 开始逆序传播梯度，并在同一节点有多条下游路径时汇总梯度。
