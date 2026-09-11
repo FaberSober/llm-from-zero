@@ -8,7 +8,7 @@
 2. [Feature 02 - Loss](feature02-loss/)
 3. [Feature 03 - Gradient](feature03-gradient/)
 4. [Feature 04 - Chain Rule](feature04-chain-rule/)
-5. Feature 05 - Backpropagation
+5. [Feature 05 - Backpropagation](feature05-backprop/)
 6. Feature 06 - Gradient Descent
 7. Feature 07 - Learning Rate
 
@@ -18,6 +18,6 @@
 - [x] Loss
 - [x] Gradient
 - [x] Chain Rule
-- [ ] Backpropagation
+- [x] Backpropagation
 - [ ] Gradient Descent
 - [ ] Learning Rate
