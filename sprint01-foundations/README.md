@@ -7,7 +7,7 @@
 1. [Feature 01 - Forward Computation](feature01-forward/)
 2. [Feature 02 - Loss](feature02-loss/)
 3. [Feature 03 - Gradient](feature03-gradient/)
-4. Feature 04 - Chain Rule
+4. [Feature 04 - Chain Rule](feature04-chain-rule/)
 5. Feature 05 - Backpropagation
 6. Feature 06 - Gradient Descent
 7. Feature 07 - Learning Rate
@@ -17,7 +17,7 @@
 - [x] Forward Computation
 - [x] Loss
 - [x] Gradient
-- [ ] Chain Rule
+- [x] Chain Rule
 - [ ] Backpropagation
 - [ ] Gradient Descent
 - [ ] Learning Rate

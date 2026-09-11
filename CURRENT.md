@@ -9,10 +9,10 @@ Sprint 01 - Foundations
 - Feature 01 - Forward Computation
 - Feature 02 - Loss
 - Feature 03 - Gradient
+- Feature 04 - Chain Rule
 
 ## 下一步
 
-- Feature 04 - Chain Rule
 - Feature 05 - Backpropagation
 - Feature 06 - Gradient Descent
 - Feature 07 - Learning Rate
