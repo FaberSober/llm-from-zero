@@ -364,7 +364,7 @@ AI 只创建 Draft PR，不直接修改 `main`。该阶段需要额外的 API Ke
 当前实施状态：
 
 - 阶段 1 的文档基础设施已完成并通过本地构建；
-- 阶段 2 的工作流文件已完成，等待 GitHub Pages 设置和远端 Actions 验证；
+- 阶段 2 的工作流、GitHub Pages 设置和远端 Actions 已验证完成；
 - 阶段 3 的 README 规范和大模型维护提示词已完成；
 - 单文档 Feature 的导航已展平；
 - 阶段 4 暂不启动。
@@ -424,11 +424,11 @@ AI 只创建 Draft PR，不直接修改 `main`。该阶段需要额外的 API Ke
 | 网站能力 | 内置搜索 | 支持按章节查找教学内容 | 执行开发 | ✅已完成 |
 | 网站能力 | 本地预览 | 使用 `uv run zensical serve` 实时查看 | 执行开发 | ✅已完成 |
 | 质量检查 | Strict Build | 检查 Markdown、链接、资源和构建配置 | 执行开发 | ✅已完成 |
-| CI/CD | PR 构建检查 | PR 构建成功后才允许进入审核流程 | 执行开发 | 🔍验证中 |
-| CI/CD | Main 自动部署 | `main` push 后构建并发布 Pages | 执行开发 | 🔍验证中 |
-| CI/CD | 手动部署 | 通过 `workflow_dispatch` 重新发布 | 执行开发 | 🔍验证中 |
-| 托管 | GitHub Pages 配置 | 设置 Actions 为发布源和 `github-pages` 环境 | 执行开发 | 🕒待处理 |
-| 托管 | 在线地址 | 验证 `fabersober.github.io/llm-from-zero` 可访问 | 执行开发 | 🕒待处理 |
+| CI/CD | PR 构建检查 | PR 构建成功后才允许进入审核流程 | 执行开发 | ✅已完成 |
+| CI/CD | Main 自动部署 | `main` push 后构建并发布 Pages | 执行开发 | ✅已完成 |
+| CI/CD | 手动部署 | 通过 `workflow_dispatch` 重新发布 | 执行开发 | ✅已完成 |
+| 托管 | GitHub Pages 配置 | 设置 Actions 为发布源和 `github-pages` 环境 | 执行开发 | ✅已完成 |
+| 托管 | 在线地址 | 验证 `fabersober.github.io/llm-from-zero` 可访问 | 执行开发 | ✅已完成 |
 | 内容协作 | Codex 手动维护 | 每个 Feature 完成后更新对应 README | 执行开发 | ✅已完成 |
 | 内容协作 | Draft PR | 大模型修改内容后只创建待审核 PR | 未来版本规划 | 🕒待处理 |
 | 内容索引 | Glossary | 自动维护术语表和概念关系 | 未来版本规划 | 🕒待处理 |
