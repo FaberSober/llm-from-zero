@@ -1,0 +1,11 @@
+[project]
+name = "llm-from-zero"
+version = "0.1.0"
+description = "从零开始理解、实现并训练一个小型大语言模型"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "zensical>=0.0.60",
+]

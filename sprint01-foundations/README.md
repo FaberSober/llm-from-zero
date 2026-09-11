@@ -14,8 +14,8 @@
 
 当前进度：
 
-- [ ] Forward Computation
-- [ ] Loss
+- [x] Forward Computation
+- [x] Loss
 - [ ] Gradient
 - [ ] Chain Rule
 - [ ] Backpropagation

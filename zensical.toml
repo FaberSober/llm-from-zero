@@ -1,0 +1,36 @@
+[project]
+site_name = "LLM From Zero"
+site_description = "从零开始理解、实现并训练一个小型大语言模型"
+site_url = "https://fabersober.github.io/llm-from-zero/"
+docs_dir = "docs-build"
+site_dir = "site"
+repo_url = "https://github.com/FaberSober/llm-from-zero"
+repo_name = "FaberSober/llm-from-zero"
+extra_javascript = [
+  "https://unpkg.com/katex@0/dist/katex.min.js",
+  "https://unpkg.com/katex@0/dist/contrib/auto-render.min.js",
+  "javascripts/katex.js",
+]
+extra_css = [
+  "https://unpkg.com/katex@0/dist/katex.min.css",
+]
+
+[project.theme]
+language = "zh"
+features = [
+  "navigation.sections",
+  "navigation.expand",
+  "navigation.path",
+  "navigation.top",
+  "search.suggest",
+  "search.highlight",
+]
+
+[project.markdown_extensions]
+admonition = {}
+attr_list = {}
+md_in_html = {}
+pymdownx.arithmatex.generic = true
+pymdownx.superfences.custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]

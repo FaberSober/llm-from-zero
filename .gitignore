@@ -1,0 +1,5 @@
+docs-build/
+site/
+.venv/
+__pycache__/
+*.py[cod]
